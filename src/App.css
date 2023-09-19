@@ -1,0 +1,116 @@
+/* App.css */
+
+:root {
+  --primary: #e131ff;
+  --secondary: #1b2569;
+}
+.App {
+  background: linear-gradient(to bottom, #000000, #ffffff);
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff69b4, #651fff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background:  linear-gradient(135deg, #ff1c5e, #6200ea);;
+}
+
+/* Add styles for result images */
+.result-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.result-images img {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add styles for loading indicator */
+.loading-indicator {
+  display: inline-block;
+  margin: 20px auto;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Navbar.css */
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
